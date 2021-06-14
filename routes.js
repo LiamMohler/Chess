@@ -27,7 +27,7 @@ router.use(function(req, res, next) {
   next();
 });
 
-callReset(){
+function callReset(){
   boardjs.resetBoard()
 }
 
