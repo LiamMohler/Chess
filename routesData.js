@@ -45,14 +45,17 @@ router.get('/readplayer', function(req, res){
 	else
 		res.json(null);
 });
+
 router.get("/win",function(req,res){
   console.log(req.query.ident);
   console.log("in request");
+  callReset()
   return(db.getAndPutPlayerWin(req.query.ident,res))
 })
 router.get("/loss",function(req,res){
   console.log(req.query.ident);
   console.log("in request");
+  callReset()
   return(db.getAndPutPlayerLoss(req.query.ident,res))
 })
 
