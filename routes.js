@@ -27,11 +27,8 @@ router.use(function(req, res, next) {
   next();
 });
 
-function callReset(){
-  boardjs.resetBoard()
-}
 
-//added belor for mongo
+//added below for mongo
 const myDatabase = require('./myDatabase');
 //added above for mongo
 

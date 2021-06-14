@@ -53,11 +53,11 @@ this.fakeconstruct();
 		if(this.board[this.findLocation(moveTo)] != null && this.board[this.findLocation(moveTo)].type == "king"){
 			if(this.board[this.findLocation(moveTo)].color == "white"){
 				this.blackWin = true;
-				//this.resetBoard();
+				this.resetBoard();
 			}
 			else{
 				this.whiteWin = true;
-				//this.resetBoard();
+				this.resetBoard();
 			}
 		}
 		if((moveTo[1] == 1 || moveTo[1] == 8) && this.board[this.findLocation(moveFrom)].type == "pawn" && this.blackWin != true && this.whiteWin != true)
